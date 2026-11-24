@@ -1,0 +1,26 @@
+/* Additions for auth + history. Link after styles.css */
+.or{display:flex;align-items:center;gap:12px;margin:22px 0 0;color:#5b636d;font-size:11px}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:54px;margin-top:16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);font:600 14px Inter,sans-serif;cursor:pointer;transition:border-color .2s,background .2s}
+.gbtn:hover{border-color:rgba(94,200,224,.4);background:rgba(94,200,224,.06)}
+.gbtn b{font-size:18px;color:#8de6f7}
+.linkbtn{display:block;margin:16px auto 0;border:0;background:none;color:var(--muted);font:500 13px Inter,sans-serif;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.linkbtn:hover{color:var(--cyan-soft)}
+.credits{margin:0 8px 10px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);color:var(--cyan-soft);font-size:12.5px;font-weight:500}
+.hbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.hbar input{flex:1;min-width:180px;height:48px}
+.hbar select{height:48px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--field);color:var(--text);font:400 14px Inter,sans-serif}
+.hlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.hitem{display:flex;flex-direction:column;gap:10px;padding:16px;border-radius:16px;border:1px solid var(--line);background:#0c1319}
+.hitem img,.hitem video{width:100%;border-radius:10px;aspect-ratio:1;object-fit:cover}.hitem audio{width:100%}
+.hhead{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}
+.badge{padding:3px 10px;border-radius:99px;background:#14232c;color:var(--cyan-soft);font-weight:600;text-transform:capitalize}
+.hprompt{margin:0;font-size:14px;line-height:1.45;word-break:break-word}
+.hreply{margin:0;font-size:13px;color:var(--muted);line-height:1.5;max-height:140px;overflow:auto;white-space:pre-wrap}
+.hmeta{margin:0;font-size:12px;color:var(--muted)}
+.hitem .chip{align-self:flex-start}
+#reset{position:fixed;inset:0;z-index:80;display:none;place-items:center;background:rgba(8,12,17,.88);backdrop-filter:blur(8px);padding:24px}
+#reset.open{display:grid}
+#reset form{width:min(420px,100%);padding:28px;border-radius:20px;border:1px solid var(--line);background:#0c1319}
+#reset h2{margin:0 0 8px;font-weight:500;letter-spacing:-.03em}
+#reset p.sub{margin:0 0 6px}
